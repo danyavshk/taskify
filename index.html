@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify - Управление задачами</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="icon" href="./public/milk-tea-svgrepo-com.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>📌 Taskify</h1>
+    </header>
+    
+    <main>
+        <section class="task-input">
+            <input type="text" id="taskInput" placeholder="Добавить новую задачу...">
+            <button id="addTask">Добавить</button>
+        </section>
+        
+        <section class="task-container">
+            <h2>Активные задачи</h2>
+            <ul id="taskList"></ul>
+        </section>
+        
+        <section class="task-container completed-tasks">
+            <h2>Выполненные задачи</h2>
+            <ul id="completedTaskList"></ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 Vishnyakov team. Все права не защищены увы...</p>
+    </footer>
+    
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
